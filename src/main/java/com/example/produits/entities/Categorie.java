@@ -22,6 +22,7 @@ public class Categorie {
 	private Long idCat;
 	private String nomCat;
 	private String descriptionCat;
+	
 	@JsonIgnore
 	@OneToMany(mappedBy = "categorie")
 	private List<Produit> produits;
